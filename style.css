@@ -4,37 +4,49 @@ body {
         "logo   header header"
         "menu   text   news"
         "footer footer footer";
-    grid-gap: 1pt;
+    grid-gap: 10pt;
     grid-template-rows: 150px 1fr 100px;
     grid-template-columns: 150px 0.75fr 0.25fr;
 }
 
 
-#logo { grid-area: logo; }
+#logo {
+    grid-area: logo;
+    width: 100%;
+}
+
 #header {
     grid-area: header;
-    font-size: large;
+    font-size: 50px;
     font-weight: bold;
     color: #41A6A3;
 
     text-align: center;
-    padding-top: 65px;
+    margin: 0px;
 }
-#menu { grid-area: menu; }
-#text { grid-area: text; }
-#news { grid-area: news; }
+
+#menu {
+    grid-area: menu;
+    font-size: large
+}
+
+#text {
+    grid-area: text;
+}
+
+#news {
+    grid-area: news;
+}
 
 #footer {
     grid-area: footer;
     font-size: small;
+
+    color : rgb(70,165,157);
 }
 
-/* body>div>* { */
-/*     padding:20px; */
-/* } */
 
-
-#logo,#header,#menu {
+#logo,#header,#menu,#footer {
     text-align: center;
 }
 
@@ -44,6 +56,10 @@ body {
 
 #header,#news,#menu,#footer {
     background-color: rgba(66,74,85,0.3);
+}
+
+#header,#menu,#text,#news,#footer {
+    padding: 20px;
 }
 
 a {
@@ -62,6 +78,11 @@ h1 {
     color : rgb(70,165,157);
 }
 
+img.float_left {
+    float: left;
+    margin: 20px;
+}
+
 table {
     width : 100%;
     font-size : large;
@@ -75,7 +96,3 @@ th {
 }
 
 
-.image {
-    float: left;
-    padding: 20px;
-}
