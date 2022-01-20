@@ -1,0 +1,81 @@
+body {
+    display: grid;
+    grid-template-areas:
+        "logo   header header"
+        "menu   text   news"
+        "footer footer footer";
+    grid-gap: 1pt;
+    grid-template-rows: 150px 1fr 100px;
+    grid-template-columns: 150px 0.75fr 0.25fr;
+}
+
+
+#logo { grid-area: logo; }
+#header {
+    grid-area: header;
+    font-size: large;
+    font-weight: bold;
+    color: #41A6A3;
+
+    text-align: center;
+    padding-top: 65px;
+}
+#menu { grid-area: menu; }
+#text { grid-area: text; }
+#news { grid-area: news; }
+
+#footer {
+    grid-area: footer;
+    font-size: small;
+}
+
+/* body>div>* { */
+/*     padding:20px; */
+/* } */
+
+
+#logo,#header,#menu {
+    text-align: center;
+}
+
+#logo,#text {
+    background-color: rgba(66,74,85,0.1);
+}
+
+#header,#news,#menu,#footer {
+    background-color: rgba(66,74,85,0.3);
+}
+
+a {
+    color : rgb(70,165,157);
+}
+
+a:hover {
+    color : black;
+}
+
+strong {
+    color : rgb(70,165,157);
+}
+
+h1 {
+    color : rgb(70,165,157);
+}
+
+table {
+    width : 100%;
+    font-size : large;
+    text-align: center;
+}
+td {
+    background-color : rgba(66,74,85,0.1);
+}
+th {
+    background-color : rgba(66,74,85,0.2);
+}
+
+
+.image {
+    float: left;
+    padding: 20px;
+}
